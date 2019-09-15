@@ -1,0 +1,92 @@
+// Color Variables
+
+$color-black: #000000;
+$color-white: #ffffff;
+$color-light-grey: #d8d9db;
+$btn-hover-color: #ebebeb;
+$btn-active-color: #bbbcbe;
+$fxn-btns: #df974c;
+$fxn-btn-hover: #dfb07e;
+$fxn-btn-active: #dd8d37;
+
+// Font Variables
+
+
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 400px;
+    background-color: $color-black;
+    color: $color-white;
+    border: 3px solid red;
+}
+
+.cal-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+
+.cal-button {
+    background-color: $color-light-grey;
+    color: $color-black;
+    border: none;
+    font-size: 40px;
+    height: 90px;
+    flex-basis: 24.5%;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+
+    &:active {
+        background-color: $btn-active-color;
+    }
+
+    &:last-child {
+        background-color: $fxn-btns;
+        color: $color-white;
+
+        &:hover {
+            background-color: $fxn-btn-hover;
+        }
+
+        &::active {
+            background-color: $fxn-btn-active;
+        }
+    }
+
+}
+
+.screen {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 40px;
+}
+
+.double {
+    flex-basis: 49.7%;
+}
+
+.tripple {
+    flex-basis: 74.8%;
+}
