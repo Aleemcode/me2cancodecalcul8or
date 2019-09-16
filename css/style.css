@@ -11,7 +11,8 @@ body {
   padding: 0; }
 
 .wrapper {
-  width: 380px;
+  max-width: 400px;
+  width: 370px;
   background-color: #000000;
   color: #ffffff;
   border: 3px solid red; }
@@ -53,3 +54,18 @@ body {
 
 .tripple {
   flex-basis: 74.8%; }
+
+.paragraph {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace; }
+
+span {
+  color: darkblue;
+  font-weight: 800;
+  display: block; }
+
+footer {
+  max-width: 400px;
+  width: 360px;
+  text-align: center; }
