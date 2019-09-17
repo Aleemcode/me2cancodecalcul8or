@@ -28,6 +28,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
@@ -36,6 +38,7 @@ body {
     background-color: $color-black;
     color: $color-white;
     border: 3px solid red;
+    margin: auto;
 }
 
 .cal-button-row {
@@ -105,6 +108,7 @@ span {
 }
 
 footer {
+    background-color: white;
     max-width: 400px;
     width: 360px;
     text-align: center;
